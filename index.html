@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <style>
+        body {
+            background-color: rgb(13, 11, 29);
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+        .description {
+            font-size: larger;
+            margin: 1rem;
+        }
+
+        .input-label {
+            display: block;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .input {
+            font-size: 14px;
+            outline: #fff;
+            padding: 0.6rem 1rem;
+            margin: 1rem;
+            border: 2px solid royalblue;
+            border-radius: 0.5rem;
+            width: 100%;
+            max-width: 258px;
+        }
+
+        #check-button {
+            background: blueviolet;
+            border: none;
+            color: #fff;
+            padding: 0.7rem 1rem;
+            border-radius: 0.5rem;
+            font-size: large;
+            cursor: pointer;
+            outline: #fff;
+            margin: auto;
+            display: block;
+        }
+
+        #error-message {
+            display: block;
+            font-size: larger;
+            margin: 1rem 0 0;
+        }
+
+        .change-table {
+            width: 50%;
+            text-align: justify;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        .change-table caption {
+            margin: 1rem auto;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        th,
+        td {
+            border: 2px solid blue;
+            width: 0%;
+            border-collapse: collapse;
+            padding: 0.4rem;
+
+        }
+
+        footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            padding: 50px 0;
+            background-color: rgba(139, 109, 204, 0.205);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Cash Register Manager</h1>
+            <p class="description">
+                Enter the bill amount and cash given by the customer and know minimum
+                number of notes to return.
+            </p>
+            <label class="input-label" for="bill-amount">Bill Amount:</label>
+            <input class="input" id="bill-amount" type="number" />
+
+            <label class="input-label" for="cash-given">Cash Given:</label>
+            <input class="input" id="cash-given" type="number" />
+            <button id="check-button">Check</button>
+            <p id="error-message"></p>
+            <table class="change-table">
+                <caption>
+                    Return Change
+                </caption>
+                <tr>
+                    <th>No of Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Note</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h3>get in touch with me on linkedin👇👇</h3>
+        <a href="https://www.linkedin.com/in/ashish-kush/">LinkedIn</a>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
