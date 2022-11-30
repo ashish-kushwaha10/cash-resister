@@ -20,6 +20,8 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
   } else {
     showMessage("Invalid Bill Amount");
   }
+  cashGiven.value =""
+  billAmount.value =""
 });
 
 function calculateChange(amountToBeReturned) {
